@@ -102,7 +102,7 @@ li {
 }
 .Header--Section {
   color: white;
-  height: 83vh;
+  height: 85vh;
 
   display: flex;
   flex-direction: row;
@@ -264,10 +264,10 @@ li {
   .Header--Section__right {
     flex: 0;
     align-items: flex-start;
-    min-width: 400px;
+    min-width: 200px;
   }
   .Header--Section__right p {
-    text-align: justify;
+    text-align: left;
   }
 }
 @media screen and (max-width: 560px) {
