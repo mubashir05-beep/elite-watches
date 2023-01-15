@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Galore-reg';
+    src: url('./fonts/GaloreDEMO.ttf');
+}
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url('./fonts/MontserratAlternates-Regular.ttf');
+}
+@font-face {
+    font-family:'Roboto-reg' ;
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family:'Vogue-reg' ;
+    src: url("./fonts/Vogue.ttf");
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    font-family:'Roboto-reg' ;
+}
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    padding: 1rem 3rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+li{
+    list-style-type: none;
+
+}
+a{
+text-decoration: none;
+    color: white;
+}
+.logo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.elite{
+           font-family:'Vogue-reg' ;
+       font-size: 43px;
+}
+.watch{
+    font-family:'Roboto-reg' ;
+
+}
+.bg--video{
+ height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+center{
+    color: white;
+    font-size: 32rem;
+}
+.Header--Section{
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
