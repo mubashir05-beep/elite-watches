@@ -310,11 +310,12 @@ li {
   margin: 2rem 3rem;
   border-radius: 55px;
  background: linear-gradient(to right, #F1E9DB, #A39B8B); 
-  color: #272635;
+  color: #132E32;
   text-align: center;
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
+ box-shadow: -1px -1px 49px 8px rgba(255, 255, 255, 0.158);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -327,15 +328,15 @@ li {
   width: 9rem;
   padding: 1rem;
   text-decoration: none;
-    color: #272635;
+    color: #132E32;
   transition: all 0.35s ease-in-out;
-  border: 1px solid #272635;
+  border: 2px solid #132E32;
   border-radius: 12px;
 }
 .CTA a:hover{
-    background-color:#272635;;
+    background-color:#132E32;
     color: #F1E9DB;
-    border: 1px solid #F1E9DB;
+    
 }
 
 @media screen and (max-width:850px) {
