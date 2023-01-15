@@ -1,84 +1,184 @@
 @font-face {
-    font-family: 'Galore-reg';
-    src: url('./fonts/GaloreDEMO.ttf');
+  font-family: "Galore-reg";
+  src: url("./fonts/GaloreDEMO.ttf");
 }
 @font-face {
-    font-family: 'Montserrat' ;
-    src: url('./fonts/MontserratAlternates-Regular.ttf');
+  font-family: "Montserrat";
+  src: url("./fonts/MontserratAlternates-Regular.ttf");
 }
 @font-face {
-    font-family:'Roboto-reg' ;
-    src: url("./fonts/Roboto-Regular.ttf");
+  font-family: "Roboto-reg";
+  src: url("./fonts/Roboto-Regular.ttf");
 }
 @font-face {
-    font-family:'Vogue-reg' ;
-    src: url("./fonts/Vogue.ttf");
+  font-family: "Vogue-reg";
+  src: url("./fonts/Vogue.ttf");
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: roboto;
-    font-family:'Roboto-reg' ;
+@font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/HelveticaNeueLTPro-UltLt.otf");
 }
-body{
-    background-color: black;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+  font-family: "Roboto-reg";
+  scroll-behavior: smooth;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    padding: 1rem 3rem;
+body {
+  background-color: black;
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 45px;
+/* CSS for NavBar & Header Section */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 1rem 3rem;
 }
-li{
-    list-style-type: none;
-
+.Left-Navbar{
+      display: flex;
+  flex-direction: row;
+  gap: 45px;
+    width: 400px;
+      align-items: center;
+  justify-content: left;
 }
-a{
-text-decoration: none;
-    color: white;
+.Right-Navbar
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 45px;
+    width: 400px;
 }
-.logo{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+li {
+  list-style-type: none;
 }
-.elite{
-           font-family:'Vogue-reg' ;
-       font-size: 43px;
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s ease-in-out;
 }
-.watch{
-    font-family:'Roboto-reg' ;
-
+a:hover{
+      mix-blend-mode:difference;
+      color:  #f9dd94;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #F2C57C ;
 }
-.bg--video{
- height: 100vh;
+.logo {
+  color: white;
+  display: flex;
+  max-width: 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.elite {
+     mix-blend-mode:difference;
+     color: #f8d680;
+  font-family: "Vogue-reg";
+  font-size: 55px;
+  line-height: 55px;
+}
+.watch {
+    mix-blend-mode: difference;
+  font-family: "Roboto-reg";
+}
+.bg--video {
+  height: 100vh;
   width: 100vw;
   object-fit: cover;
   position: fixed;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.4;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
 }
-center{
-    color: white;
-    font-size: 32rem;
+.Header--Section {
+  color: white;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:flex-end;
+  margin:  0rem 3rem;
+  gap: 15px;
 }
-.Header--Section{
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.Header--Section__left{
+  display: flex;
+  flex-direction: column;
+    flex: 1;
+    gap: 15px;
+
+}
+.Hero--TagLine{
+    font-size: 3rem;
+    line-height: 3rem;
+font-weight: 500;
+}
+.Hero--TagLine span{
+    color: #f8d680;
+    font-size: 4rem;
+    mix-blend-mode: difference;
+}
+.Hero--Creator{
+    font-size: 3rem;
+    font-weight: 500;
+        font-weight: 400;
+     font-family: "Helvetica";
+     
+}
+.Hero--Creator span{
+    color: #f8d680;
+    font-size: 4rem;
+    mix-blend-mode: difference;
+}
+.Header--Section button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 300;
+    font-size: 1rem;
+    border: 2px solid white;
+    padding: 1rem;
+    width: 9rem;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+.Header--Section button:hover{
+    border: 2px solid #f8d680;
+    color: #f8d680;
+}
+.Header--Section button:active{
+    color: #997823;
+}
+.Header--Section__right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.intro{
+    color: #f8d680;
+    font-size: 4rem;
+    mix-blend-mode: difference;
+}
+.Header--Section__right p{
+text-align: right;
+    font-size: 18px;
+    line-height: 28px;
+}
+.Header--Section__right span{
+text-transform: capitalize;
+    color:#ffe0e0;
 }
