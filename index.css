@@ -57,7 +57,7 @@ body {
 li {
   list-style-type: none;
 }
-.desktopLink{
+.desktopLink {
   text-decoration: none;
   color: white;
   transition: all 0.25s ease-in-out;
@@ -89,21 +89,21 @@ li {
   font-family: "Roboto-reg";
 }
 .bg--video {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  opacity: 0.4;
-  right: 0;
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
   z-index: -1;
 }
 .Header--Section {
   color: white;
   height: 85vh;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -186,41 +186,40 @@ li {
 }
 .Header--Section__right span {
   text-transform: capitalize;
-  color: #7FB685;
+  color: #7fb685;
 }
-.mobile-Menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mobile-Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.mobile-Menu ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     background-color: #f8d68063;
-     border-radius: 28px;
-    width: 200px;
-    padding: 2rem 0;
-    gap: 25px;
-  
+.mobile-Menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8d68063;
+  border-radius: 28px;
+  width: 200px;
+  padding: 2rem 0;
+  gap: 25px;
 }
-.burger{
-    display: none;
-    background: url('./assets/icons8-menu-48.svg');
-    cursor: pointer;
+.burger {
+  display: none;
+  background: url("./assets/icons8-menu-48.svg");
+  cursor: pointer;
 }
-.mobile-Menu a{
-    text-decoration: none;
-    color: white;
-      transition: all 0.25s ease-in-out;
+.mobile-Menu a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s ease-in-out;
 }
-.mobile-Menu a:hover{
+.mobile-Menu a:hover {
   color: black;
   padding-bottom: 3px;
   border-bottom: 1px solid black;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 @media screen and (max-width: 1300px) {
   .Left-Navbar {
@@ -229,8 +228,8 @@ li {
   .Right-Navbar {
     display: none;
   }
-  
-  .burger{
+
+  .burger {
     display: block;
   }
 }
@@ -244,12 +243,12 @@ li {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding: 2rem;
-    width: 100vw;
+    width: 100%
   }
   .Header--Section__right {
     border-bottom: 1px solid white;
     padding: 2rem;
-    width: 100vw;
+    width: 100%
   }
   .Header--Section {
     flex-direction: column;
@@ -304,22 +303,44 @@ li {
     line-height: 22px;
   }
 }
+
 /* CSS for CTA Section */
-.CTA{
-    height: 300px;
-    background-color: black;
-    color: #f9dd94;
+.CTA {
+   padding: 3rem;
+  margin: 2rem 3rem;
+  border-radius: 55px;
+ background: linear-gradient(to right, #F1E9DB, #A39B8B); 
+  color: #272635;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 25px;
+  align-items: center;
+}
+.CTA p{
+}
+.CTA a {
+  width: 9rem;
+  padding: 1rem;
+  text-decoration: none;
+    color: #272635;
+  transition: all 0.35s ease-in-out;
+  border: 1px solid #272635;
+  border-radius: 12px;
+}
+.CTA a:hover{
+    background-color:#272635;;
+    color: #F1E9DB;
+    border: 1px solid #F1E9DB;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:850px) {
+    .CTA{
+        padding: 3rem;
+        flex-direction: column;
+    }
+}
