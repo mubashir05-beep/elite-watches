@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Watches.</title>
     <link rel="stylesheet" href="index.css" />
+  
   </head>
   <body>
-    <!-- Container for Header Section -->
-    <nav>
+    <!-- Container for Navbar -->
+    <nav class="desktop-Menu">
+
       <!-- Navbar for Header Section-->
       <ul class="Left-Navbar">
         <li>
+          <a href=""class="desktopLink">Watches</a>
+        </li>
+        <li><a href="" class="desktopLink">Featured Collection</a></li>
+        <li><a href=""class="desktopLink">New Arival</a></li>
+      </ul>
+      <div class="logo">
+        <div class="elite"class="desktopLink">Elite</div>
+        <div class="watch"class="desktopLink">Watches</div>
+      </div>
+      <ul class="Right-Navbar">
+        <li><a href=""class="desktopLink">Services</a></li>
+        <li><a href=""class="desktopLink">Search</a></li>
+        <li><a href=""class="desktopLink">About Us</a></li>
+      </ul>
+       <img class="burger" id="menu-button" src="./assets/open.svg" alt="" srcset="">
+    </nav>
+    <!-- Menu For Mobile -->
+   
+    <nav class="mobile-Menu hidden" id="menu">
+      <ul>
+         <li>
           <a href="">Watches</a>
         </li>
         <li><a href="">Featured Collection</a></li>
         <li><a href="">New Arival</a></li>
-      </ul>
-      <div class="logo">
-        <div class="elite">Elite</div>
-        <div class="watch">Watches</div>
-      </div>
-      <ul class="Right-Navbar">
         <li><a href="">Services</a></li>
         <li><a href="">Search</a></li>
         <li><a href="">About Us</a></li>
       </ul>
+
     </nav>
+      <!-- Container for Header Section -->
     <div class="headerContainer">
       <!-- Videa For Background -->
       <video
@@ -42,7 +61,7 @@
         <div class="Header--Section__left">
           <p class="Hero--TagLine">Code <span>11.59</span></p>
           <h3 class="Hero--Creator"><span>By</span> <i>Audemars Piguet</i></h3>
-          <button>Learn More</button>
+          <a class="btn" href="">Learn More</a>
         </div>
         <div class="Header--Section__right">
               <div class="intro">INTRODUCING</div>
@@ -51,5 +70,10 @@
         </div>
       </div>
     </div>
+      <!-- Container for Call To Action Section(CTA) -->
+    <div class="CTA">
+<p>Want to learn more about simp</p>
+    </div>
+  <script defer src="./script.js"></script>
   </body>
 </html>

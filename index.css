@@ -15,8 +15,8 @@
   src: url("./fonts/Vogue.ttf");
 }
 @font-face {
-    font-family: "Helvetica";
-    src: url("./fonts/HelveticaNeueLTPro-UltLt.otf");
+  font-family: "Helvetica";
+  src: url("./fonts/HelveticaNeueLTPro-UltLt.otf");
 }
 * {
   box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
   background-color: black;
 }
 /* CSS for NavBar & Header Section */
-nav {
+.desktop-Menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,36 +38,35 @@ nav {
   height: 15vh;
   padding: 1rem 3rem;
 }
-.Left-Navbar{
-      display: flex;
+.Left-Navbar {
+  display: flex;
   flex-direction: row;
   gap: 45px;
-    width: 400px;
-      align-items: center;
+  width: 400px;
+  align-items: center;
   justify-content: left;
 }
-.Right-Navbar
-{
+.Right-Navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
   gap: 45px;
-    width: 400px;
+  width: 400px;
 }
 li {
   list-style-type: none;
 }
-a {
+.desktopLink{
   text-decoration: none;
   color: white;
   transition: all 0.25s ease-in-out;
 }
-a:hover{
-      mix-blend-mode:difference;
-      color:  #f9dd94;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #F2C57C ;
+.desktopLink:hover {
+  mix-blend-mode: difference;
+  color: #f9dd94;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #f2c57c;
 }
 .logo {
   color: white;
@@ -79,14 +78,14 @@ a:hover{
   cursor: pointer;
 }
 .elite {
-     mix-blend-mode:difference;
-     color: #f8d680;
+  mix-blend-mode: difference;
+  color: #f8d680;
   font-family: "Vogue-reg";
   font-size: 55px;
   line-height: 55px;
 }
 .watch {
-    mix-blend-mode: difference;
+  mix-blend-mode: difference;
   font-family: "Roboto-reg";
 }
 .bg--video {
@@ -103,82 +102,224 @@ a:hover{
 }
 .Header--Section {
   color: white;
-  height: 80vh;
+  height: 83vh;
+
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  align-items:flex-end;
-  margin:  0rem 3rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 15px;
+  padding: 1rem 0;
+  margin: 0 3rem;
 }
-.Header--Section__left{
+.Header--Section__left {
   display: flex;
   flex-direction: column;
-    flex: 1;
-    gap: 15px;
+  flex: 1;
+  gap: 15px;
+  min-width: 500px;
+}
+.Hero--TagLine {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.Hero--TagLine span {
+  color: #f8d680;
+  font-size: 4rem;
+  mix-blend-mode: difference;
+}
+.Hero--Creator {
+  font-size: 3rem;
+  font-weight: 500;
+  font-weight: 400;
+  font-family: "Helvetica";
+}
+.Hero--Creator span {
+  color: #f8d680;
+  font-size: 4rem;
+  mix-blend-mode: difference;
+}
+.Header--Section a {
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: 300;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  border: 2px solid white;
+  padding: 1rem;
+  width: 9rem;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+.Header--Section a:hover {
+  border: 2px solid #f8d680;
+  color: #f8d680;
+}
+.Header--Section a:active {
+  color: #997823;
+}
+.Header--Section__right {
+  flex: 0.5;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
 
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+  min-width: 600px;
 }
-.Hero--TagLine{
-    font-size: 3rem;
-    line-height: 3rem;
-font-weight: 500;
+.intro {
+  color: #f8d680;
+  font-size: 4rem;
+  mix-blend-mode: difference;
 }
-.Hero--TagLine span{
-    color: #f8d680;
-    font-size: 4rem;
-    mix-blend-mode: difference;
+.Header--Section__right p {
+  text-align: right;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 550px;
 }
-.Hero--Creator{
-    font-size: 3rem;
-    font-weight: 500;
-        font-weight: 400;
-     font-family: "Helvetica";
-     
+.Header--Section__right span {
+  text-transform: capitalize;
+  color: #7FB685;
 }
-.Hero--Creator span{
-    color: #f8d680;
-    font-size: 4rem;
-    mix-blend-mode: difference;
-}
-.Header--Section button{
-    border: none;
-    background: transparent;
-    color: white;
-    font-family: 300;
-    font-size: 1rem;
-    border: 2px solid white;
-    padding: 1rem;
-    width: 9rem;
-    cursor: pointer;
-    transition: all 0.35s ease-in-out;
-}
-.Header--Section button:hover{
-    border: 2px solid #f8d680;
-    color: #f8d680;
-}
-.Header--Section button:active{
-    color: #997823;
-}
-.Header--Section__right{
-    flex: 0.5;
+.mobile-Menu{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 15px;
-    
+    align-items: center;
 }
-.intro{
-    color: #f8d680;
-    font-size: 4rem;
-    mix-blend-mode: difference;
+.mobile-Menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: #f8d68063;
+     border-radius: 28px;
+    width: 200px;
+    padding: 2rem 0;
+    gap: 25px;
+  
 }
-.Header--Section__right p{
-text-align: right;
-    font-size: 18px;
-    line-height: 28px;
+.burger{
+    display: none;
+    background: url('./assets/icons8-menu-48.svg');
+    cursor: pointer;
 }
-.Header--Section__right span{
-text-transform: capitalize;
-    color:#ffe0e0;
+.mobile-Menu a{
+    text-decoration: none;
+    color: white;
+      transition: all 0.25s ease-in-out;
 }
+.mobile-Menu a:hover{
+  color: black;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width: 1300px) {
+  .Left-Navbar {
+    display: none;
+  }
+  .Right-Navbar {
+    display: none;
+  }
+  
+  .burger{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1212px) {
+  .Header--Section {
+    margin: 0;
+    gap: 0;
+  }
+  .Header--Section__left {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 2rem;
+    width: 100vw;
+  }
+  .Header--Section__right {
+    border-bottom: 1px solid white;
+    padding: 2rem;
+    width: 100vw;
+  }
+  .Header--Section {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 85vh;
+  }
+  .Header--Section__left {
+    flex: 0;
+    min-width: 300px;
+  }
+  .Header--Section__right {
+    flex: 0;
+    align-items: flex-start;
+    min-width: 400px;
+  }
+  .Header--Section__right p {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 560px) {
+  .Hero--TagLine {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .Hero--TagLine span {
+    font-size: 3rem;
+  }
+  .Hero--Creator {
+    font-size: 2rem;
+  }
+  .Hero--Creator span {
+    font-size: 3rem;
+  }
+  .Header--Section button {
+    font-size: 0.75rem;
+    width: 7rem;
+    padding: 0.75rem;
+  }
+  .elite {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .watch {
+    font-size: 12px;
+  }
+  .intro {
+    font-size: 2rem;
+  }
+  .Header--Section__right p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+/* CSS for CTA Section */
+.CTA{
+    height: 300px;
+    background-color: black;
+    color: #f9dd94;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
