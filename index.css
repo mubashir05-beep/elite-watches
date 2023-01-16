@@ -345,3 +345,19 @@ li {
         flex-direction: column;
     }
 }
+@media screen and (max-width:580px) {
+    .CTA{
+      font-size: 18px;
+  line-height: 22px;
+    }
+    .CTA a {
+  width: 7rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 14px;
+    color: #132E32;
+  transition: all 0.35s ease-in-out;
+  border: 2px solid #132E32;
+  border-radius: 12px;
+}
+}
