@@ -116,8 +116,10 @@ li {
 .Header--Section__left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
-  gap: 15px;
+  gap: 6px;
+  height: 300px;
   min-width: 500px;
 }
 .Hero--TagLine {
@@ -167,14 +169,14 @@ li {
   height: 300px;
   display: flex;
   flex-direction: column;
-
   align-items: flex-end;
   justify-content: center;
-  gap: 15px;
+  gap: 9px;
   min-width: 600px;
 }
 .intro {
   color: #f8d680;
+  line-height: 4rem;
   font-size: 4rem;
   mix-blend-mode: difference;
 }
@@ -243,12 +245,12 @@ li {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding: 2rem;
-    width: 100%
+    width: 100%;
   }
   .Header--Section__right {
     border-bottom: 1px solid white;
     padding: 2rem;
-    width: 100%
+    width: 100%;
   }
   .Header--Section {
     flex-direction: column;
@@ -306,58 +308,232 @@ li {
 
 /* CSS for CTA Section */
 .CTA {
-   padding: 3rem;
+  padding: 3rem;
   margin: 2rem 3rem;
   border-radius: 55px;
- background: linear-gradient(to right, #F1E9DB, #A39B8B); 
-  color: #132E32;
+  background: linear-gradient(to right, #ffffff, #ffdb8e);
+  color: #164649;
   text-align: center;
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
- box-shadow: -1px -1px 49px 8px rgba(255, 255, 255, 0.158);
+  box-shadow: -1px -1px 49px 8px rgba(255, 255, 255, 0.158);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 25px;
   align-items: center;
 }
-.CTA p{
+.CTA p {
 }
 .CTA a {
   width: 9rem;
   padding: 1rem;
   text-decoration: none;
-    color: #132E32;
+  color: #164649;
   transition: all 0.35s ease-in-out;
-  border: 2px solid #132E32;
+  border: 2px solid #164649;
   border-radius: 12px;
 }
-.CTA a:hover{
-    background-color:#132E32;
-    color: #F1E9DB;
-    
+.CTA a:hover {
+  background-color: #164649;
+  color: #f1e9db;
 }
 
-@media screen and (max-width:850px) {
-    .CTA{
-        padding: 3rem;
-        flex-direction: column;
-    }
+@media screen and (max-width: 850px) {
+  .CTA {
+    padding: 3rem;
+    flex-direction: column;
+  }
 }
-@media screen and (max-width:580px) {
-    .CTA{
-      font-size: 18px;
-  line-height: 22px;
-    }
-    .CTA a {
-  width: 7rem;
-  padding: 0.5rem;
+@media screen and (max-width: 580px) {
+  .CTA {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .CTA a {
+    width: 7rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 14px;
+    color: #132e32;
+    transition: all 0.35s ease-in-out;
+    border: 2px solid #132e32;
+    border-radius: 12px;
+  }
+}
+/* CSS for Product Description Section */
+.product--Description {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+}
+.first__Desc,
+.third__Desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  gap: 5rem;
+}
+.secound__Desc,
+.fourth__Desc {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  gap: 6rem;
+}
+.prodImg {
+  width: 100%;
+  height: 100%;
+}
+.desc {
+  color: white;
+}
+.desc h3 {
+  color: #f8d680;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+.desc p {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+  width: 600px;
+}
+.secound__Desc .prodImg {
+  width: 100%;
+  height: 100%;
+}
+.desc__props {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 1rem;
+  gap: 12px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  display: flex;
+  flex-direction: column;
+}
+.desc__props span {
+  color: #f8d680;
+}
+@media screen and (max-width: 1220px) {
+  .first__Desc,
+  .secound__Desc,
+  .third__Desc,
+  .fourth__Desc {
+    flex-direction: column;
+    border-top: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .fourth__Desc {
+    border-bottom: 1px solid white;
+  }
+  .product--Description {
+    margin: 0;
+  }
+  .desc p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    width: auto;
+  }
+  .prodImg {
+    width: 100%;
+  }
+  .secound__Desc .prodImg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .desc h3 {
+    color: #f8d680;
+    font-size: 2.9rem;
+    line-height: 5rem;
+  }
+}
+/* CSS for Featured Produccts Section  */
+.feature--Products {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 3rem;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #d4d4d4;
+  justify-content: center;
+}
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  gap: 12px;
+  flex: 0.3;
+  border-right: white 1px solid;
+}
+.Title a {
+  border: none;
   text-decoration: none;
-  font-size: 14px;
-    color: #132E32;
+  background-color: #f8d680;
+  color: black;
+  border: 2px solid #f8d680;
+  cursor: pointer;
+  padding: 1rem;
   transition: all 0.35s ease-in-out;
-  border: 2px solid #132E32;
-  border-radius: 12px;
 }
+.Title a:hover{
+  background-color: black;
+  color: #f8d680;
+  border-radius: 14px;
+}
+.prodContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+.prod {
+  background-color: #242424;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.prod img {
+  width: 70%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tagline {
+  color: #c7c7c7;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+}
+.title_tag {
+  color: rgb(159, 255, 250);
 }

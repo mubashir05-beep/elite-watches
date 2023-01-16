@@ -6,49 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Watches.</title>
     <link rel="stylesheet" href="index.css" />
-  
   </head>
   <body>
     <!-- Container for Navbar -->
     <nav class="desktop-Menu">
-
       <!-- Navbar for Header Section-->
       <ul class="Left-Navbar">
         <li>
-          <a href=""class="desktopLink">Watches</a>
+          <a href="" class="desktopLink">Watches</a>
         </li>
-        <li><a href="" class="desktopLink">Featured Collection</a></li>
-        <li><a href=""class="desktopLink">New Arival</a></li>
+        <li><a href="#feature" class="desktopLink">Featured Collection</a></li>
+        <li><a href="#feature" class="desktopLink">New Arival</a></li>
       </ul>
       <div class="logo">
-        <div class="elite"class="desktopLink">Elite</div>
-        <div class="watch"class="desktopLink">Watches</div>
+        <div class="elite" class="desktopLink">Elite</div>
+        <div class="watch" class="desktopLink">Watches</div>
       </div>
       <ul class="Right-Navbar">
-        <li><a href=""class="desktopLink">Services</a></li>
-        <li><a href=""class="desktopLink">Search</a></li>
-        <li><a href=""class="desktopLink">About Us</a></li>
+        <li><a href="" class="desktopLink">Services</a></li>
+        <li><a href="" class="desktopLink">Search</a></li>
+        <li><a href="" class="desktopLink">About Us</a></li>
       </ul>
-       <img class="burger" id="menu-button" src="./assets/open.svg" alt="" srcset="">
+      <img
+        class="burger"
+        id="menu-button"
+        src="./assets/open.svg"
+        alt=""
+        srcset=""
+      />
     </nav>
     <!-- Menu For Mobile -->
-   
     <nav class="mobile-Menu hidden" id="menu">
       <ul>
-         <li>
+        <li>
           <a href="">Watches</a>
         </li>
-        <li><a href="">Featured Collection</a></li>
-        <li><a href="">New Arival</a></li>
+        <li><a href="#feature">Featured Collection</a></li>
+        <li><a href="#feature">New Arival</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Search</a></li>
         <li><a href="">About Us</a></li>
       </ul>
-
     </nav>
-      <!-- Container for Header Section -->
+    <!-- Container for Header Section -->
     <div class="headerContainer">
-      <!-- Videa For Background -->
+      <!-- Video For Background -->
       <video
         class="bg--video"
         autoplay
@@ -61,22 +63,119 @@
         <div class="Header--Section__left">
           <p class="Hero--TagLine">Code <span>11.59</span></p>
           <h3 class="Hero--Creator"><span>By</span> <i>Audemars Piguet</i></h3>
-          <a class="btn" href="">Learn More</a>
+          <a class="btn" href="#ProDesc">Learn More</a>
         </div>
         <div class="Header--Section__right">
-              <div class="intro">INTRODUCING</div>
-              <span>A new complication in the CODE 11.59 by Audemars Piguet : </span>
-              <p>The Selfwinding Flying Tourbillon Chronograph combines past and present, classicism and modernity, all encased in an intricate openworked dial.</p>
+          <div class="intro">INTRODUCING</div>
+          <span
+            >A new complication in the CODE 11.59 by Audemars Piguet :
+          </span>
+          <p>
+            The Selfwinding Flying Tourbillon Chronograph combines past and
+            present, classicism and modernity, all encased in an intricate
+            openworked dial.
+          </p>
         </div>
       </div>
     </div>
-      <!-- Container for Call To Action Section(CTA) -->
-      
-         <div class="CTA">
-<p>Have a question or need assistance? Contact us Now!</p>
-<a href="">Contact Us</a>
+    <!-- Container for Call To Action Section(CTA) -->
+    <div class="CTA">
+      <p>Have a question or need assistance? Contact us Now!</p>
+      <a href="">Contact Us</a>
     </div>
-    
-  <script defer src="./script.js"></script>
+    <!-- Container for Product Description Section -->
+    <div class="product--Description" id="ProDesc">
+      <div class="first__Desc">
+        <img class="prodImg" src="./assets/glass.png" alt="" />
+        <div class="desc">
+          <h3>GLASS</h3>
+          <p>
+            The Manufacture has created a contemporary double curved sapphire
+            crystal, whose tense, arched profile plays with depth, perspective
+            and light for a unique optic experience. While its internal surface
+            is shaped like a dome, it is vertically curved from 6 to 12 o’clock.
+          </p>
+        </div>
+      </div>
+      <div class="secound__Desc">
+        <img class="prodImg" src="./assets/case.png" alt="" />
+        <div class="desc">
+          <h3>CASE</h3>
+          <p>
+            18-carat white gold case, double glareproofed sapphire crystal and
+            caseback.
+          </p>
+          <div class="desc__props">
+            <p><span>SIZE :</span> 41 mm</p>
+            <p><span>THICKNESS :</span> 13.8 mm</p>
+            <p><span>WATER RESISTANCE :</span> 30 m</p>
+          </div>
+        </div>
+      </div>
+      <div class="third__Desc">
+        <img class="prodImg" src="./assets/dial.png" alt="" />
+        <div class="desc">
+          <h3>DIAL</h3>
+          <p>
+            Lacquered blue inner bezel, openworked dial, 18-carat white gold
+            hands.
+          </p>
+        </div>
+      </div>
+      <div class="fourth__Desc">
+        <img class="prodImg" src="./assets/bracelet.png" alt="" />
+        <div class="desc">
+          <h3>BRACELET</h3>
+          <p>
+            Hand-stitched “large square scale” blue alligator strap with
+            18-carat white gold AP folding clasp.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Container for Feature Products Section -->
+    <div class="feature--Products" id="feature">
+      <div class="Title">
+        <p>Want To Try Someting New ? Try these</p>
+       
+          <a href="#">Browse All Watches</a>
+      </div>
+      <div class="prodContainer">
+        <div class="prod">
+          <img src="./assets/prod-01.png" alt="" />
+          <div class="details">
+            <p class="tagline">26396OR.OO.D002CR.02</p>
+              <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+              <div class="title">Code 11.59 by Audemars Piguet</div>
+              <div class="title_tag">Selfwinding Flying Tourbillon</div>
+            </div>
+            <p class="tagline">41mm, Pink Gold</p>
+          </div>
+        </div>
+        <div class="prod">
+              <img src="./assets/prod-02.png" alt="" />
+          <div class="details">
+            <p class="tagline">26396OR.OO.D002CR.02</p>
+               <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+              <div class="title">Code 11.59 by Audemars Piguet</div>
+              <div class="title_tag">Selfwinding Flying Tourbillon</div>
+            </div>
+            <p class="tagline">41mm, Pink Gold</p>
+          </div>
+        </div>
+        <div class="prod">
+              <img src="./assets/prod-03.png" alt="" />
+          <div class="details">
+            <p class="tagline">26396OR.OO.D002CR.02</p>
+            <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+              <div class="title">Code 11.59 by Audemars Piguet</div>
+              <div class="title_tag">Selfwinding Flying Tourbillon</div>
+            </div>
+            <p class="tagline">41mm, Pink Gold</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="./script.js"></script>
   </body>
 </html>
