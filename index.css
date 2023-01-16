@@ -71,7 +71,7 @@ li {
 .logo {
   color: white;
   display: flex;
-  max-width: 20%;
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -312,7 +312,7 @@ li {
   margin: 2rem 3rem;
   border-radius: 55px;
   background-color: #e7e7e7;
-  color: #132e32;
+  color: #000000;
   text-align: center;
   font-weight: 500;
   font-size: 22px;
@@ -328,14 +328,14 @@ li {
   width: 9rem;
   padding: 1rem;
   text-decoration: none;
-  color: #132e32;
+  color: #0f0f0f;
   transition: all 0.35s ease-in-out;
-  border: 2px solid #132e32;
+  border: 2px solid #000000;
   border-radius: 12px;
 }
 .CTA a:hover {
-  background-color: #132e32;
-  border: 2px solid #132e32;
+  background-color: #0e0e0e;
+  border: 2px solid #000000;
   color: #ffffff;
 }
 
@@ -802,5 +802,11 @@ gap: 35px;
 .logo p{
   padding-top:1.5rem ;
   color: #a7a7a7;
+  width: auto;
 text-align: center;
+}
+@media screen and (max-width:950px) {
+  .Footer--Section__Left{
+    flex-direction: column;
+  }
 }
