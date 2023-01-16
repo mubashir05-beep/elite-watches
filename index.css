@@ -311,33 +311,32 @@ li {
   padding: 3rem;
   margin: 2rem 3rem;
   border-radius: 55px;
-  background: linear-gradient(to right, #ffffff, #ffdb8e);
-  color: #164649;
+  background-color: #e7e7e7;
+  color: #132e32;
   text-align: center;
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
-  box-shadow: -1px -1px 49px 8px rgba(255, 255, 255, 0.158);
+  box-shadow: -1px -1px 49px 8px rgba(255, 255, 255, 0.274);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 25px;
   align-items: center;
 }
-.CTA p {
-}
 .CTA a {
   width: 9rem;
   padding: 1rem;
   text-decoration: none;
-  color: #164649;
+  color: #132e32;
   transition: all 0.35s ease-in-out;
-  border: 2px solid #164649;
+  border: 2px solid #132e32;
   border-radius: 12px;
 }
 .CTA a:hover {
-  background-color: #164649;
-  color: #f1e9db;
+  background-color: #132e32;
+  border: 2px solid #132e32;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 850px) {
@@ -467,32 +466,34 @@ li {
   flex-wrap: wrap;
   border-radius: 20px;
   align-items: center;
-  background-color: #d4d4d4;
+   background-color: #a7a7a7;
   justify-content: center;
 }
 .Title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  text-align: justify;
+  color: rgb(0, 0, 0);
   padding: 1rem;
-  gap: 12px;
+  font-size: 18px;
+  gap: 18px;
   flex: 0.3;
-  border-right: white 1px solid;
+  border-right: rgb(2, 2, 2) 1px solid;
 }
 .Title a {
   border: none;
   text-decoration: none;
-  background-color: #f8d680;
+  background-color: transparent;
   color: black;
-  border: 2px solid #f8d680;
+  border: 2px solid #0e0e0e;
   cursor: pointer;
   padding: 1rem;
   transition: all 0.35s ease-in-out;
 }
 .Title a:hover{
   background-color: black;
-  color: #f8d680;
+  color: white;
   border-radius: 14px;
 }
 .prodContainer {
@@ -502,9 +503,10 @@ li {
   flex-wrap: wrap;
   padding: 2rem 1rem;
   flex: 1;
+  justify-content: center;
 }
 .prod {
-  background-color: #242424;
+  background-color: #132e32;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -536,4 +538,49 @@ li {
 }
 .title_tag {
   color: rgb(159, 255, 250);
+}
+
+@media screen and (max-width:1240px) {
+ .feature--Products{
+  flex-direction: column;
+ } 
+ .Title{
+  flex: 1;
+  border: none;
+  padding-top: 2rem;
+ }
+ .prodContainer{
+  justify-content: center;
+ }
+ .prod{
+  width: 300px;
+ }
+ .title{
+  text-align: center;
+ }
+}
+@media screen and (max-width:533px) {
+
+  .Title{
+    font-size: 14px;
+  }
+  .Title a{
+    font-size: 14px;
+    padding:0.5rem ;
+  }
+  .prod{
+    width: 250px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .title_tag{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:390px) {
+    .feature--Products{
+margin: 0;
+ } 
 }
