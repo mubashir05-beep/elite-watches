@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+     
+      body {
+        height: 100vh;
+        width: flex;
+        background-color: rgb(0, 0, 0);
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+       gap: 15px;
+       background-color: rgba(165, 165, 165, 0.432);
+       padding: 3rem;
+       align-items: center;
+       
+       border-radius:35px ;
+      }
+      label{
+        color: white;
+      }
+      input{
+        border: none;
+        font-size: 13px;
+        height: 35px;
+        border: 2px solid rgb(179, 179, 179);
+        width: 300px;
+        padding:0 1rem;
+      }
+      .upper,.lower{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      #btn{
+        border: none;
+        background-color: transparent;
+        color: white;
+    width: 250px;
+    border-radius:25px ;
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        text-align: center;
+        transition: all 0.35s ease-in-out;
+      }
+      #btn:hover{
+        color: black;
+        background-color: white;
+        border: 2px solid white;
+      }
+      @media screen and (max-width:550px) {
+        form{
+            padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/">
+        <div class="upper">
+      <label for="fname">Full Name:</label><br />
+      <input type="text" id="fname" name="fname" placeholder="Please Enter Your Name : " value="" /><br />
+      </div>
+      <div class="lower">
+      <label for="email">Email : </label><br />
+      <input type="email" id="email" name="email" value="" placeholder="Please Enter Your Email Address : " /><br /><br />
+      </div>
+      <input id="btn" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

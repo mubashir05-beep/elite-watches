@@ -604,6 +604,8 @@ li {
   background-color: #132e32;
   border-radius: 25px;
   padding: 3rem;
+  width: 100%;
+  height: 100%;
   gap: 35px;
 }
 .names {
@@ -680,7 +682,8 @@ li {
   display: grid;
   flex: 1 1;
   gap: 1rem;
-
+ width: 100%;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
 }
 
