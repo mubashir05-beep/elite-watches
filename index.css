@@ -347,7 +347,7 @@ li {
 @media screen and (max-width: 580px) {
   .CTA {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 20px;
   }
   .CTA a {
     width: 7rem;
@@ -587,6 +587,7 @@ li {
 @media screen and (max-width: 533px) {
   .Title {
     font-size: 14px;
+    padding-top: 3rem;
   }
   .Title a {
     font-size: 14px;
@@ -594,6 +595,7 @@ li {
   }
   .prod {
     width: 250px;
+    height: 450px;
   }
   .title {
     font-size: 16px;
@@ -627,7 +629,8 @@ li {
   height: 650px;
   background-color: #132e3265;
   border-radius: 25px;
-  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   transition: all 0.35s ease-in-out;
   cursor: pointer;
   gap: 35px;
@@ -777,8 +780,23 @@ transform: scale(1.1);
 }
 @media screen and (max-width: 500px) {
   .leftContainer {
-    padding: 1rem;
+    
   }
+  .modalnumber {
+  font-size: 12px;
+}
+.cart{
+  padding: 0.5em;;
+}
+.buy{
+  padding: 0.5em;
+}
+.cart img{
+  width: 32px;
+}
+  .name {
+  font-size: 16px;
+  line-height: 20px;}
   .buttons {
     flex-direction: column;
   }
@@ -825,13 +843,19 @@ transform: scale(1.1);
 @media screen and (max-width: 506px) {
   .address--Section p {
     font-size: 2rem;
+    padding: 0 2em ;
+    text-align: center;
   }
   .address--Section a {
     border-radius: 55px;
     transition: all 0.35s ease-in-out;
     background-color: transparent;
-    padding: 1rem;
-    cursor: pointer;
+    padding: 1em;
+cursor: pointer;
+font-size: 14px;
+  }
+  .address--Section{
+    height: 30vh;
   }
 }
 /* CSS for Footer Section */
@@ -866,5 +890,8 @@ transform: scale(1.1);
 @media screen and (max-width: 950px) {
   .Footer--Section__Left {
     flex-direction: column;
+    border-top:1px solid white ;
+    gap: 80px;
   }
+
 }
