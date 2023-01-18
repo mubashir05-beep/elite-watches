@@ -458,6 +458,16 @@ li {
   }
 }
 /* CSS for Featured Produccts Section  */
+/* .div__Titles{
+  color: #ffffff;
+  width: 550px;
+  font-size: 4rem;
+  border-bottom: 8px solid #f8d680;
+  margin: 2rem 3rem;
+}
+.div__Titles span{
+ color: #132e3267;
+} */
 .feature--Products {
   display: flex;
   flex-direction: row;
@@ -466,7 +476,7 @@ li {
   border-radius: 25px;
   box-shadow:0px 0px 40px 1px rgba(255, 255, 255, 0.26);
   align-items: center;
-  background-color: #a7a7a7;
+ background: rgba(255, 255, 255, 0.568);
   justify-content: center;
 }
 .Title {
@@ -615,7 +625,7 @@ li {
   align-items: center; 
   flex: 0.9;
   height: 650px;
-  background-color: #412728;
+  background-color: #132e3265;
   border-radius: 25px;
   padding: 3rem;
   transition: all 0.35s ease-in-out;
@@ -623,8 +633,9 @@ li {
   gap: 35px;
 }
 .leftContainer:hover {
-  box-shadow: rgba(255, 255, 255, 0.27) 0px 0.25em 1em,
-    rgba(255, 255, 255, 0.05) 0px 0.25em 1em;
+  /* box-shadow: rgba(255, 255, 255, 0.27) 0px 0.25em 1em,
+    rgba(255, 255, 255, 0.05) 0px 0.25em 1em; */
+ background-color: #132e32c4;
 }
 .leftContainer:hover > #img1 {
   transform: scale(1.1);
@@ -728,15 +739,14 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  border: 2px solid white;
   padding: 1rem;
   cursor: pointer;
+background-color: #132e3265;
 transition: all 0.35s ease-in-out;
 }
 
 .product:hover{
-  background-color: #292929;
- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+background-color: #132e32c4;
 }
 .product img {
   width: 65.6%;
