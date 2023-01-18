@@ -385,8 +385,8 @@ li {
   gap: 6rem;
 }
 .prodImg {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+
 }
 .desc {
   color: white;
@@ -403,8 +403,8 @@ li {
   width: 600px;
 }
 .secound__Desc .prodImg {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+
 }
 .desc__props {
   font-size: 16px;
@@ -603,7 +603,7 @@ li {
 .Products {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row;
   gap: 1rem;
   margin: 2rem 3rem;
@@ -612,14 +612,13 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   flex: 0.9;
   height: 650px;
   background-color: #020202;
+  border: 2px solid white;
   border-radius: 25px;
   padding: 3rem;
-  width: 100%;
-  height: 100%;
   transition: all 0.35s ease-in-out;
   cursor: pointer;
   gap: 35px;
@@ -660,7 +659,8 @@ li {
   font-size: 12px;
 }
 .leftContainer img {
-  width: 50%;
+
+  width: 70%;
   transition: all 0.35s ease-in-out;
 }
 
@@ -729,6 +729,7 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+  border: 2px solid white;
   padding: 1rem;
   cursor: pointer;
 transition: all 0.35s ease-in-out;
@@ -739,7 +740,7 @@ transition: all 0.35s ease-in-out;
  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .product img {
-  width: 50%;
+  width: 65.6%;
   transition: all 0.35s ease-in-out;
 }
 .product:hover > #sideImg{
@@ -756,6 +757,8 @@ transform: scale(1.1);
   }
   .rightSection {
     grid-template-columns: repeat(2, 1fr);
+  }.product img {
+   
   }
 }
 @media screen and (max-width: 650px) {
