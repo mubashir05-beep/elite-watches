@@ -69,6 +69,9 @@
       #btn:hover {
         background: #0165b6;
       }
+      #goback:hover{
+         background: #0165b6;
+      }
       @media screen and (max-width:425px) {
         form{
           width: 200px;
@@ -76,6 +79,22 @@
         #message{
           width: 200px;
         }
+      }
+      #goback{
+        text-decoration: none;
+           font-size: 1rem;
+        font-weight: 100;
+        padding: 1rem 2rem;
+        background: #006dcc;
+        border-color: #016bc1;
+        box-shadow: 0 3px 0 #0165b6;
+        color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+        
+      }
+      center{
+        margin-top:2rem;
       }
     </style>
     <script>
@@ -158,5 +177,7 @@
         <input type="submit" id="btn" value="Submit" />
       </div>
     </form>
+  
+<center> <a id='goback' href="../index.html">Go Back</a></center>
   </body>
 </html>
