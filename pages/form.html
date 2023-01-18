@@ -41,13 +41,13 @@
       .row {
         padding-bottom: 10px;
       }
-      .form-inline {
+      .form {
         border: 1px solid #ccc;
         padding: 8px 10px 4px;
         border-radius: 2px;
       }
-      .form-inline label,
-      .form-inline input {
+      .form label,
+      .form input {
         display: inline-block;
         width: auto;
         padding-right: 15px;
@@ -68,6 +68,14 @@
       }
       #btn:hover {
         background: #0165b6;
+      }
+      @media screen and (max-width:425px) {
+        form{
+          width: 200px;
+        }
+        #message{
+          width: 200px;
+        }
       }
     </style>
     <script>
@@ -143,7 +151,7 @@
       </div>
       <div class="row">
         <label>Message</label>
-        <textarea name="message" id="message" cols="40" rows="6"></textarea>
+        <textarea name="message" id="message" cols="42" rows="6"></textarea>
         <div class="error" id="msgErr"></div>
       </div>
       <div class="row">
