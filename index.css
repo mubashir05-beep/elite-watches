@@ -193,6 +193,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.35s ease-in-out;
 }
 .mobile-Menu ul {
   display: flex;
