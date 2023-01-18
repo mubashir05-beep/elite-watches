@@ -316,7 +316,7 @@ li {
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
-  box-shadow:0px 0px 40px 1px rgba(255, 255, 255, 0.26);
+  box-shadow: 0px 0px 40px 1px rgba(255, 255, 255, 0.26);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -386,7 +386,6 @@ li {
 }
 .prodImg {
   width: 70%;
-
 }
 .desc {
   color: white;
@@ -404,7 +403,6 @@ li {
 }
 .secound__Desc .prodImg {
   width: 70%;
-
 }
 .desc__props {
   font-size: 16px;
@@ -474,9 +472,9 @@ li {
   margin: 1rem 3rem;
   flex-wrap: wrap;
   border-radius: 25px;
-  box-shadow:0px 0px 40px 1px rgba(255, 255, 255, 0.26);
+  box-shadow: 0px 0px 40px 1px rgba(255, 255, 255, 0.26);
   align-items: center;
- background: rgba(255, 255, 255, 0.568);
+  background: rgba(255, 255, 255, 0.568);
   justify-content: center;
 }
 .Title {
@@ -530,10 +528,10 @@ li {
   cursor: pointer;
   transition: all 0.35s ease-in-out;
 }
-.prod:hover{
+.prod:hover {
   background-color: #132e32;
 }
-.prod:hover > #featureImg{
+.prod:hover > #featureImg {
   transform: scale(1.1);
 }
 
@@ -624,13 +622,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   flex: 0.9;
   height: 650px;
   background-color: #132e3265;
   border-radius: 25px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding:3em;
   transition: all 0.35s ease-in-out;
   cursor: pointer;
   gap: 35px;
@@ -638,7 +635,7 @@ li {
 .leftContainer:hover {
   /* box-shadow: rgba(255, 255, 255, 0.27) 0px 0.25em 1em,
     rgba(255, 255, 255, 0.05) 0px 0.25em 1em; */
- background-color: #132e32c4;
+  background-color: #132e32c4;
 }
 .leftContainer:hover > #img1 {
   transform: scale(1.1);
@@ -657,8 +654,8 @@ li {
   text-align: center;
   line-height: 24px;
 }
-.name1{
-    color: white;
+.name1 {
+  color: white;
   font-size: 14px;
   text-align: center;
   line-height: 18px;
@@ -667,12 +664,11 @@ li {
   color: rgb(241, 139, 139);
   font-size: 16px;
 }
-.modalnumber1{
-    color: rgb(241, 139, 139);
+.modalnumber1 {
+  color: rgb(241, 139, 139);
   font-size: 12px;
 }
 .leftContainer img {
-
   width: 70%;
   transition: all 0.35s ease-in-out;
 }
@@ -744,19 +740,19 @@ li {
   border-radius: 25px;
   padding: 1rem;
   cursor: pointer;
-background-color: #132e3265;
-transition: all 0.35s ease-in-out;
+  background-color: #132e3265;
+  transition: all 0.35s ease-in-out;
 }
 
-.product:hover{
-background-color: #132e32c4;
+.product:hover {
+  background-color: #132e32c4;
 }
 .product img {
   width: 65.6%;
   transition: all 0.35s ease-in-out;
 }
-.product:hover > #sideImg{
-transform: scale(1.1);
+.product:hover > #sideImg {
+  transform: scale(1.1);
 }
 @media screen and (min-width: 1330px) {
   .rightSection {
@@ -769,8 +765,8 @@ transform: scale(1.1);
   }
   .rightSection {
     grid-template-columns: repeat(2, 1fr);
-  }.product img {
-   
+  }
+  .product img {
   }
 }
 @media screen and (max-width: 650px) {
@@ -780,23 +776,23 @@ transform: scale(1.1);
 }
 @media screen and (max-width: 500px) {
   .leftContainer {
-    
   }
   .modalnumber {
-  font-size: 12px;
-}
-.cart{
-  padding: 0.5em;;
-}
-.buy{
-  padding: 0.5em;
-}
-.cart img{
-  width: 32px;
-}
+    font-size: 12px;
+  }
+  .cart {
+    padding: 0.5em;
+  }
+  .buy {
+    padding: 0.5em;
+  }
+  .cart img {
+    width: 32px;
+  }
   .name {
-  font-size: 16px;
-  line-height: 20px;}
+    font-size: 16px;
+    line-height: 20px;
+  }
   .buttons {
     flex-direction: column;
   }
@@ -810,7 +806,7 @@ transform: scale(1.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-    box-shadow:0px 0px 40px 1px rgba(255, 255, 255, 0.26);
+  box-shadow: 0px 0px 40px 1px rgba(255, 255, 255, 0.26);
   gap: 35px;
   align-items: center;
 }
@@ -843,7 +839,7 @@ transform: scale(1.1);
 @media screen and (max-width: 506px) {
   .address--Section p {
     font-size: 2rem;
-    padding: 0 2em ;
+    padding: 0 2em;
     text-align: center;
   }
   .address--Section a {
@@ -851,10 +847,10 @@ transform: scale(1.1);
     transition: all 0.35s ease-in-out;
     background-color: transparent;
     padding: 1em;
-cursor: pointer;
-font-size: 14px;
+    cursor: pointer;
+    font-size: 14px;
   }
-  .address--Section{
+  .address--Section {
     height: 30vh;
   }
 }
@@ -890,8 +886,7 @@ font-size: 14px;
 @media screen and (max-width: 950px) {
   .Footer--Section__Left {
     flex-direction: column;
-    border-top:1px solid white ;
+    border-top: 1px solid white;
     gap: 80px;
   }
-
 }
