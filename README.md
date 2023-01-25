@@ -11,8 +11,9 @@ Technologies & Techniques Used :
     2)Form Validation
     3)CSS.
     4)CSS BEM Model.
-    5)Used Flex-Box & Gird.
-    6)GIT/GITHUB
+    5)Smooth CSS Transitions and Animations
+    6)Used Flex-Box & Gird.
+    7)GIT/GITHUB
     
  Live : https://mubashir05-beep.github.io/elite-watches
  
