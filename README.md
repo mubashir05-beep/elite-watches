@@ -7,11 +7,12 @@ To Run Locally :
 
 Technologies & Techniques Used :
 
-    1)Modern ES6+ JavaScript..
-    2)CSS.
-    3)CSS BEM Model.
-    4)Used Flex-Box & Gird.
-    5)GIT/GITHUB
+    1)Modern ES6+ JavaScript.
+    2)Form Validation
+    3)CSS.
+    4)CSS BEM Model.
+    5)Used Flex-Box & Gird.
+    6)GIT/GITHUB
     
  Live : https://mubashir05-beep.github.io/elite-watches
  
