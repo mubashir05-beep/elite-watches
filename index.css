@@ -254,6 +254,7 @@ li {
   }
   .Header--Section {
     flex-direction: column;
+    padding: 0;
     align-items: flex-start;
     justify-content: flex-end;
     height: 85vh;
