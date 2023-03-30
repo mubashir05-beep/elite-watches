@@ -9,7 +9,7 @@ Technologies & Techniques Used :
 
     1)Modern ES6+ JavaScript.
     2)Form Validation
-    3)CSS.
+    3)CSS Styling.
     4)CSS BEM Model.
     5)Smooth CSS Transitions and Animations
     6)Used Flex-Box & Gird.
