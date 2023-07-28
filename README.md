@@ -18,4 +18,4 @@ Technologies & Techniques Used :
  Live : https://mubashir05-beep.github.io/elite-watches
  
  OUTPUT/PREVIEW :
-[![Screenshot 2023-01-25 at 04-27-07 Elite Watches](https://user-images.githubusercontent.com/100374421/214563950-b50029a7-93d6-4a94-981a-3acedf6b0661.png)](https://elite-watches.vercel.app/)https://elite-watches.vercel.app/
+https://elite-watches.vercel.app/
