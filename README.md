@@ -1,6 +1,6 @@
 # Elite-Watches
 
-To Run Locally :
+To Run Locally:
 
     1)Clone the repo.
     2)Use Live Server.
