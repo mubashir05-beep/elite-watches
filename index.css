@@ -27,6 +27,7 @@
   scroll-behavior: smooth;
 }
 body {
+  scroll-behavior: smooth;
   background-color: black;
 }
 /* CSS for NavBar & Header Section */
